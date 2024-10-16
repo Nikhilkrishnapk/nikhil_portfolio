@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+
+.container{
+    width:100%; 
+    height: 100vh;
+    position: relative;
+}
+
+/* heading styling */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+
+.logo{
+    width:50px
+}
+.list-items{
+    display:inline;
+    list-style: none;
+    margin:0px 20px;
+}
+.link{
+    color:black;
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 18px;
+}
+.link:hover{
+    color:red;
+    text-decoration:underline;
+}
+
+/* home content styling */
+
+.home-content{
+    margin:200px 0px 0px 100px;
+}
+#user-name{
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-family: "Qwitcher Grypen", cursive;
+}
+#lname{
+    color:goldenrod;
+    font-family: "Qwitcher Grypen", cursive;
+}
+#user-details{
+    line-height: 1.5;
+}
+#download{
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    padding:10px;
+    display:inline-block;
+    margin-top:20px;
+    border-radius:10px;
+    font-size: 20px;
+}
+.home-img{
+    width:45%;
+    height: 75%;
+    position: absolute;
+    bottom:0px;
+    right:30px;
+}
+.group-1{
+    position: absolute;
+    height: 100%;
+    left:50%;
+    bottom:0px;
+    transform: translateX(-50%);
+    transition: bottom 2s,left 1s;
+}
+.home-img:hover #shape{
+    bottom:80px;
+}
+.home-img:hover #girl{
+    left:30%;
+}
+
+/* about section styling */
+
+#about{
+    margin:20% 8% 0px 8%;
+}
+.sectionHead{
+    text-align: center;
+   
+}
+.mainHead{
+    font-size:30px;
+}
+.subHead{
+    font-size: 20px;
+    color:green;
+}
+
+/* using grid concept */
+
+.aboutBody{
+    margin-top: 40px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:50px;
+    align-items: center;
+}
+.img1{
+    width:85%;
+}
+
+.aboutContent{
+    font-size:20px;
+    text-align: justify;
+}
+
+.information{
+    margin-top: 1.3rem;
+}
+
+.infoBox{
+    margin-bottom: 10px;
+    display:flex;
+    align-items: center;
+}
+ 
+.infoBox>span{
+    margin-left:1rem;
+}
+
+/*skill section styling*/
+
+#skills{
+    margin:8% 8% 0 8%;
+}
+.skillContents{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:50px;
+    margin-top:20px;
+}
+.bars{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    padding:1rem 0px;
+}
+.barHead,.barPercent{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.baseBar{
+    width: 100%;
+    height: 0.5rem;
+    background-color:black;
+    border-radius:10px;
+    position:absolute;
+    bottom:0;
+} 
+.htmlBar{
+    background-color: rgb(241, 128, 16);
+    width:84%;
+}
+.cssBar{
+    background-color:  rgb(241, 128, 16);
+    width:74%;
+}
+.jsBar{
+    background-color:  rgb(241, 128, 16);
+    width:70%;
+}
+.reactBar{
+    background-color:  rgb(241, 128, 16);
+    width:85%;
+}
+
+/* contact section styling */
+
+#contact{
+    margin:8% 8% 0 8%;
+}
+.iconCollections{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    /* border:solid 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 10px;
+}
+.brands{
+    color:black;
+    font-size: 2rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,red,orange,yellow);
+}
+.icon:hover .brands{
+    color:white;
+    /* animation */
+    animation:rotate 3s;
+}
+@keyframes rotate {
+
+    0%{
+        transform: rotate(30deg);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+    
+}
+
+/* footer section styling */
+footer{
+    margin-top: 8%;
+}
+#copyright{
+    text-align: center;
+    font-weight: 700;
+}
+.uparrow{
+    float: right;
+    margin-top:-40px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* for styling the scroll bar */
+
+::-webkit-scrollbar{
+    width:10px;
+    border-radius:10px;
+}
+::-webkit-scrollbar-track{
+    background-color: aliceblue;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius:10px;
+}
